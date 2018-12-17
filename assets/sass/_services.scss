@@ -1,0 +1,17 @@
+@import "variables";
+
+.services {
+  background: #b24a50 url("../img/services_waves.png") center/cover no-repeat;
+  &__logo {
+    color: $first-color !important;
+    font: 400 50px/60px $second-font;
+    &:hover {
+      color: #df5c64 !important;
+    }
+  }
+  &__nav-item {
+    &:hover {
+      background-color: #df5c64;
+    }
+  }
+}

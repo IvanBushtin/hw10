@@ -8,8 +8,11 @@
 
 .carousel-indicators {
   position: unset;
-  margin-top: 100px;
+  margin-top: 50px;
   cursor: pointer;
+  @media (min-height: 600px) {
+    margin-top: 100px;
+  }
   .active {
     background-color: $second-color;
   }
@@ -24,7 +27,10 @@
 
 .carousel {
   max-height: 470px;
-  margin-top: 100px;
+  margin-top: 50px;
+  @media (min-height: 600px) {
+    margin-top: 100px;
+  }
 }
 
 .carousel-item {
@@ -65,4 +71,8 @@
 .control-icon-size {
   height: 40px;
   width: 40px;
+  @media (max-width: 1020px) {
+    height: 20px;
+    width: 20px;
+  }
 }
