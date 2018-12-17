@@ -1,0 +1,51 @@
+@import "variables";
+
+.home-page {
+  background: url("../img/hp-bg.png") center/cover no-repeat, #2c3e50 url("../img/waves.png") center/cover no-repeat;
+  min-height: 940px;
+}
+
+.carousel {
+  height: 490px;
+  margin-top: 170px;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-content-wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  .carousel-content-wrapper_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    max-width: 370px;
+    color: $second-color;
+    font: 300 60px/55px $primari-font;
+    text-transform: uppercase;
+    text-align: right;
+
+    span {
+      text-transform: none;
+    }
+  }
+
+  h4 {
+    color: $second-color;
+    font: 400 138px/138px $primari-font-black;
+    text-transform: uppercase;
+  }
+}
+
+.control-icon-size {
+  height: 40px;
+  width: 40px;
+}
