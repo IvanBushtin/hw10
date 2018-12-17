@@ -1,13 +1,30 @@
 @import "variables";
 
 .home-page {
-  background: url("../img/hp-bg.png") center/cover no-repeat, #2c3e50 url("../img/waves.png") center/cover no-repeat;
-  min-height: 940px;
+  background: url("../img/waves.png") center/cover no-repeat, #2c3e50 url("../img/hp-bg.png") center/cover no-repeat;
+  max-height: 1000px;
+  min-height: 100vh;
+}
+
+.carousel-indicators {
+  position: unset;
+  margin-top: 100px;
+  cursor: pointer;
+  .active {
+    background-color: $second-color;
+  }
+  li{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: $first-color;
+  }
 }
 
 .carousel {
-  height: 490px;
-  margin-top: 170px;
+  max-height: 470px;
+  margin-top: 100px;
 }
 
 .carousel-item {
