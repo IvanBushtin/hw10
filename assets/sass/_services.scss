@@ -1,17 +1,77 @@
 @import "variables";
 
-.services {
+.second-page {
   background: #b24a50 url("../img/services_waves.png") center/cover no-repeat;
+  min-height: 100vh;
+  padding-bottom: 50px;
+
   &__logo {
     color: $first-color !important;
     font: 400 50px/60px $second-font;
+
     &:hover {
       color: #df5c64 !important;
     }
   }
+
   &__nav-item {
     &:hover {
       background-color: #df5c64;
     }
+  }
+}
+
+.services {
+  text-align: center;
+
+  &__section-header-paragraph {
+    color: #ffcccf;
+  }
+
+  h1 {
+    margin-top: 80px;
+  }
+
+  .services_paragraph {
+    color: $first-color;
+    font: 400 20px/58px $primari-font;
+    text-transform: uppercase;
+
+    span {
+      color: #ec9da2;
+    }
+  }
+}
+
+.services-list {
+  padding: 0;
+  margin-top: 80px;
+  margin-bottom: 0;
+
+  &__section-header {
+    font-size: 30px;
+  }
+
+  li {
+    flex-basis: 260px;
+    padding: 45px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    list-style: none;
+    background-color: #c8535a;
+  }
+}
+
+.service-list-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+  width: 135px;
+  margin: 0 auto;
+  background: url("../img/s-i-w-bg.png") center/cover no-repeat;
+
+  i {
+    color: #df5c64;
   }
 }

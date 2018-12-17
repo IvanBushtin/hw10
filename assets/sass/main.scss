@@ -1,4 +1,16 @@
 @import "variables";
+
+.section-header {
+  color: $first-color;
+  font: 300 60px/58px $primari-font;
+  text-transform: uppercase;
+}
+
+.section-header-paragraph {
+  color: $first-color;
+  font: 400 14px/24px $primari-font;
+}
+
 @import "header";
 @import "home-page";
 @import "services";

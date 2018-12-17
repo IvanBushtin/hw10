@@ -1,3 +1,12 @@
+.section-header {
+  color: #d4d4d4;
+  font: 300 60px/58px "Lato", sans-serif;
+  text-transform: uppercase; }
+
+.section-header-paragraph {
+  color: #d4d4d4;
+  font: 400 14px/24px "Lato", sans-serif; }
+
 .logo {
   color: #d4d4d4 !important;
   font: 400 50px/60px "Damion", cursive; }
@@ -59,6 +68,12 @@
   @media (min-height: 600px) {
     .carousel-indicators {
       margin-top: 100px; } }
+  @media (min-height: 750px) {
+    .carousel-indicators {
+      margin-top: 200px; } }
+  @media (min-height: 900px) {
+    .carousel-indicators {
+      margin-top: 350px; } }
   .carousel-indicators .active {
     background-color: #74c7d5; }
   .carousel-indicators li {
@@ -74,6 +89,9 @@
   @media (min-height: 600px) {
     .carousel {
       margin-top: 100px; } }
+  @media (min-height: 800px) {
+    .carousel {
+      margin-top: 200px; } }
 
 .carousel-item {
   text-align: center; }
@@ -108,12 +126,52 @@
       height: 20px;
       width: 20px; } }
 
-.services {
-  background: #b24a50 url("../img/services_waves.png") center/cover no-repeat; }
-  .services__logo {
+.second-page {
+  background: #b24a50 url("../img/services_waves.png") center/cover no-repeat;
+  min-height: 100vh;
+  padding-bottom: 50px; }
+  .second-page__logo {
     color: #d4d4d4 !important;
     font: 400 50px/60px "Damion", cursive; }
-    .services__logo:hover {
+    .second-page__logo:hover {
       color: #df5c64 !important; }
-  .services__nav-item:hover {
+  .second-page__nav-item:hover {
     background-color: #df5c64; }
+
+.services {
+  text-align: center; }
+  .services__section-header-paragraph {
+    color: #ffcccf; }
+  .services h1 {
+    margin-top: 80px; }
+  .services .services_paragraph {
+    color: #d4d4d4;
+    font: 400 20px/58px "Lato", sans-serif;
+    text-transform: uppercase; }
+    .services .services_paragraph span {
+      color: #ec9da2; }
+
+.services-list {
+  padding: 0;
+  margin-top: 80px;
+  margin-bottom: 0; }
+  .services-list__section-header {
+    font-size: 30px; }
+  .services-list li {
+    flex-basis: 260px;
+    padding: 45px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    list-style: none;
+    background-color: #c8535a; }
+
+.service-list-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+  width: 135px;
+  margin: 0 auto;
+  background: url("../img/s-i-w-bg.png") center/cover no-repeat; }
+  .service-list-icon-wrapper i {
+    color: #df5c64; }
