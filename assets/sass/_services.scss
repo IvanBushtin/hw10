@@ -1,6 +1,6 @@
 @import "variables";
 
-.second-page {
+.services-page {
   background: #b24a50 url("../img/services_waves.png") center/cover no-repeat;
   min-height: 100vh;
   padding-bottom: 50px;
@@ -10,13 +10,13 @@
     font: 400 50px/60px $second-font;
 
     &:hover {
-      color: #df5c64 !important;
+      color: $services-color !important;
     }
   }
 
   &__nav-item {
     &:hover {
-      background-color: #df5c64;
+      background-color: $services-color;
     }
   }
 }
@@ -72,6 +72,6 @@
   background: url("../img/s-i-w-bg.png") center/cover no-repeat;
 
   i {
-    color: #df5c64;
+    color: $services-color;
   }
 }

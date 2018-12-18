@@ -1,0 +1,113 @@
+@import "variables";
+
+.about-page {
+  background: #665464 url("../img/about-waves.png") center/cover no-repeat;
+  min-height: 100vh;
+  padding-bottom: 100px;
+
+  &__logo {
+    color: $first-color !important;
+    font: 400 50px/60px $second-font;
+
+    &:hover {
+      color: $about-color !important;
+    }
+  }
+
+  &__nav-item {
+    &:hover {
+      background-color: $about-color;
+    }
+  }
+}
+
+.about {
+  text-align: center;
+  &__section-header {
+    margin-top: 100px;
+  }
+  &__section-header-paragraph {
+    margin: 35px 0 60px;
+  }
+  .meet-the-team {
+    width: 280px;
+    height: 70px;
+    margin: 0 auto 50px;
+    background: url("../img/m_team_bg.png") center/cover no-repeat;
+    color: $first-color;
+    font: 900 25px/50px $primari-font-black;
+    text-transform: uppercase;
+  }
+}
+
+.about-list {
+  &__section-header {
+    color: #c7b6c5;
+    font: 400 25px/50px $primari-font-black;
+    margin: 30px 0 13px 0;
+  }
+  .user-icon-wrapper {
+    width: 165px;
+    height: 165px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #a1859e;;
+    background: url("../img/photo.jpg") center/cover no-repeat;
+  }
+  .about-list-item {
+    flex-basis: 250px;
+    margin: 20px 20px 0 0;
+    padding: 45px 25px 30px;
+    background-color: rgba(77, 63, 75, 0.5);
+    cursor: pointer;
+    &:hover {
+      .user-icon-wrapper {
+        border: 5px solid #df5c64;
+      }
+      .about-list__section-header {
+        color: $first-color;
+      }
+      .about-list-text {
+        color: #ff8973;
+      }
+      .facebook {
+        background-color: #4f689e;
+      }
+      .twitter {
+        background-color: #74c7d5;
+      }
+      .google {
+        background-color: #df5c64;
+      }
+      .linked-in {
+        background-color: #3e61af;
+      }
+    }
+  }
+  .about-list-text {
+    color: #a1ca6c;
+    font: 400 14px/50px $primari-font;
+    margin-bottom: 35px;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  .social-list-item {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: #a1859e;
+    border-radius: 50%;
+    cursor: pointer;
+    i {
+      color: $first-color;
+    }
+  }
+}
