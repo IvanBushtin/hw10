@@ -1,0 +1,68 @@
+@import "variables";
+
+.contacts-page {
+  background: #75b4aa url("../img/contacts-waves.png") center/cover no-repeat;
+  min-height: 100vh;
+  padding-bottom: 100px;
+
+  &__logo {
+    color: $first-color !important;
+    font: 400 50px/60px $second-font;
+
+    &:hover {
+      color: $contact-color !important;
+    }
+  }
+
+  &__nav-item {
+    &:hover {
+      background-color: $contact-color;
+    }
+  }
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contacts-list {
+  text-align: left;
+  h4 {
+    color: $first-color;
+    font: 700 30px/30px $primari-font;
+  }
+  .contacts-list-text {
+    color: $first-color;
+    font: 400 16px/21px $primari-font;
+  }
+  .contact-list-logo {
+    color: #c0dfda;
+    font: 700 20px/16px $primari-font;
+  }
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  .contact-form {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 40%;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  height: 0;
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}

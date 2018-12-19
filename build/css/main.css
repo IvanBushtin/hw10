@@ -313,8 +313,79 @@ li {
   .photo-list .caption-wrapper {
     background-color: #eee;
     text-align: center;
-    max-width: 260px; }
+    width: 260px; }
     .photo-list .caption-wrapper span {
       color: #727272;
       font: 400 14px/50px "Lato", sans-serif;
       text-transform: uppercase; }
+
+.hover-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d4d29;
+  opacity: 0; }
+  .hover-wrapper:hover {
+    opacity: 0.7; }
+  .hover-wrapper .hover-item {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d4d4d4;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #d4d4d4;
+    font: 300 48px/58px "Lato", sans-serif;
+    text-transform: uppercase; }
+
+.contacts-page {
+  background: #75b4aa url("../img/contacts-waves.png") center/cover no-repeat;
+  min-height: 100vh;
+  padding-bottom: 100px; }
+  .contacts-page__logo {
+    color: #d4d4d4 !important;
+    font: 400 50px/60px "Damion", cursive; }
+    .contacts-page__logo:hover {
+      color: #82c8bd !important; }
+  .contacts-page__nav-item:hover {
+    background-color: #82c8bd; }
+
+.contacts {
+  text-align: center; }
+
+.contacts-list {
+  text-align: left; }
+  .contacts-list h4 {
+    color: #d4d4d4;
+    font: 700 30px/30px "Lato", sans-serif; }
+  .contacts-list .contacts-list-text {
+    color: #d4d4d4;
+    font: 400 16px/21px "Lato", sans-serif; }
+  .contacts-list .contact-list-logo {
+    color: #c0dfda;
+    font: 700 20px/16px "Lato", sans-serif; }
+  .contacts-list input {
+    width: 100%; }
+  .contacts-list textarea {
+    width: 100%; }
+  .contacts-list .contact-form {
+    text-align: center;
+    width: 100%; }
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 40%;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  height: 0; }
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
