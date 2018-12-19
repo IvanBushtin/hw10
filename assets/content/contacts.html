@@ -45,7 +45,7 @@
         </nav>
     </header>
     <section class="contacts container">
-        <h1 class="section-header">
+        <h1 class="section-header contacts__section-header">
             contact us
         </h1>
         <p class="section-header-paragraph">
@@ -53,10 +53,10 @@
             rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae
             justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
         </p>
-        <div class="row contacts-list m-0">
-            <div class="col-12 col-lg-4 row m-0 p-0">
-                <div class="col-12 col-md-6 col-lg-12 p-0">
-                    <h4>
+        <div class="row contacts-list align-items-start justify-content-between">
+            <div class="col-12 col-lg-3 row m-0 p-0">
+                <div class="col-12 col-md-6 col-lg-12 address">
+                    <h4 class="address-header">
                         Address
                     </h4>
                     <span class="d-block contact-list-logo">
@@ -66,48 +66,46 @@
                         Sevenoaks Rd Sevenoaks TN14 7HR, UK
                     </span>
                 </div>
-                <div class="row col-12 col-md-6 col-lg-12 p-0 m-0 justify-content-center">
-                    <div class="col-6 p-0 contacts-list-text">
+                <div class="row col-12 col-md-6 col-lg-12 justify-content-center">
+                    <div class="col-6 contacts-list-text">
                         Phone:
                     </div>
                     <div class="col-6 p-0 contacts-list-text">
                         +44 555 555 555
                     </div>
-                    <div class="col-6 p-0 contacts-list-text">
+                    <div class="col-6 contacts-list-text">
                         Fax:
                     </div>
                     <div class="col-6 p-0 contacts-list-text">
                         +44 556 555 555
                     </div>
-                    <div class="col-6 p-0 contacts-list-text">
+                    <div class="col-6 contacts-list-text">
                         Email:
                     </div>
                     <a href="http://info@acrrostia.com" class="col-6 p-0 contacts-list-text">
                         info@acrrostia.com
                     </a>
-                    <div class="col-6 p-0 contacts-list-text">
+                    <div class="col-6 contacts-list-text">
                         Skype:
                     </div>
                     <div class="col-6 p-0 contacts-list-text">
-                        AcOstia
+                        Ac0stia
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 map-responsive">
+            <div class="col-12 col-lg-3 map-responsive">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.371885763322!2d32.
                 064469515271156!3d49.439687879348675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b7977eff1
                 49%3A0xb848bccbac9df152!2z0LHRg9C70YzQstCw0YAg0KjQtdCy0YfQtdC90LrQsCwgMjU4LCDQp9C10YDQutCw0YHQuCwg0KfQt
-                dGA0LrQsNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAxODAwMA!5e0!3m2!1suk!2sua!4v1545229988913"
-                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
-
+                dGA0LrQsNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAxODAwMA!5e0!3m2!1suk!2sua!4v1545229988913">
                 </iframe>
             </div>
-            <div class="col-12 col-lg-4 p-0">
-                <h4>
+            <div class="col-12 col-lg-5 p-0">
+                <h4 class="form-header">
                     Ask a question
                 </h4>
-                <form action="post" class="row justify-content-center contact-form">
-                    <label for="name" class="d-block col-12 col-sm-6">
+                <form action="post" class="row justify-content-center contact-form m-0">
+                    <label for="name" class="d-block col-12 col-sm-6 align-self-start">
                         <input type="text" id="name" placeholder="name">
                     </label>
                     <label for="email" class="d-block col-12 col-sm-6">
@@ -118,13 +116,29 @@
                                   placeholder="Your question"></textarea>
                     </label>
                     <label for="send" class="d-block">
-                        <button type="submit" id="send">Send</button>
+                        <button type="submit" id="send" class="button">Send</button>
                     </label>
                 </form>
             </div>
         </div>
     </section>
 </div>
+<footer class="footer">
+    <ul class="social-list">
+        <li class="social-list-item footer__social-list-item facebook">
+            <i class="fab fa-2x fa-facebook-f"></i>
+        </li>
+        <li class="social-list-item footer__social-list-item twitter">
+            <i class="fab fa-2x fa-twitter"></i>
+        </li>
+        <li class="social-list-item footer__social-list-item google">
+            <i class="fab fa-2x fa-google-plus-g"></i>
+        </li>
+        <li class="social-list-item footer__social-list-item linked-in">
+            <i class="fab fa-2x fa-linkedin-in"></i>
+        </li>
+    </ul>
+</footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
